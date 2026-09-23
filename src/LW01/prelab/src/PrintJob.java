@@ -3,7 +3,7 @@ public abstract class PrintJob implements Chargeable {
 	private String id;
 	private int pages;
 
-	public PrintJob(String id, int pages) {
+	protected PrintJob(String id, int pages) {
 		if (id == null || id.isBlank()){
             throw new IllegalArgumentException("ID cannot be empty");
         }
