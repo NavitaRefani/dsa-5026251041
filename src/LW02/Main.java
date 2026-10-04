@@ -51,7 +51,7 @@ public class Main {
                 }
             }
 
-        String drinkRecord = null;
+        String[] drinkRecord = null;
             if (!drinks.equals("-")) {
                 for (String[] d : drinks) {
                     if (d[0].equals(drinks)) {
@@ -72,10 +72,8 @@ public class Main {
                 }
 
                 success.add(order);
-
-                else {
-                    failed.push(order);
-                }
+            } else {
+                failed.push(order);
             }
 
         System.out.println();
@@ -86,7 +84,7 @@ public class Main {
 
         System.out.println();
         System.out.println("=== Remaining Food Stock ===");
-        for (String[] f : foods) {
+        for (String[] f : side_dishes) {
             System.out.println(f[0] + " : " + f[1]);
         }
 
